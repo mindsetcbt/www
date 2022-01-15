@@ -1,0 +1,417 @@
+/*
+A really hacked-to-gether CSS framework that's
+mostly just a forked version of
+Sakura: https://github.com/oxalorg/sakura
+*/
+/* Variables */
+/* Body */
+html {
+  font-size: 62.5%;
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida,
+    "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+body {
+  margin-top: 100px;
+  font-size: 1.3rem;
+  margin-top: 12;
+  line-height: 1.618;
+  max-width: 100em;
+  margin: auto;
+  color: #303952;
+  background-color: white;
+  padding: 13px;
+}
+
+main {
+  padding: 0;
+}
+header {
+  position: sticky;
+  max-width: 100em;
+  top: 0;
+  padding: 0px;
+  background: #ffffff;
+  text-align: center;
+}
+
+content > div {
+  height: 100px;
+}
+
+@media (max-width: 684px) {
+  body {
+    font-size: 1.33rem;
+  }
+}
+
+@media (max-width: 382px) {
+  body {
+    font-size: 1.35rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  font-family: IBM Plex Sans, BlinkMacSystemFont, -apple-system, Segoe UI,
+    Roboto, Helvetica, Arial, sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: keep-all;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+h3 {
+  line-height: 1.9;
+  text-align: center;
+  font-family: IBM Plex Sans, BlinkMacSystemFont, -apple-system, Segoe UI,
+    Roboto, Helvetica, Arial, sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: keep-all;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+p {
+  line-height: 1.5;
+  font-family: IBM Plex Sans, BlinkMacSystemFont, -apple-system, Segoe UI,
+    Roboto, Helvetica, Arial, sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+li {
+  line-height: 1.5;
+  font-family: IBM Plex Sans, BlinkMacSystemFont, -apple-system, Segoe UI,
+    Roboto, Helvetica, Arial, sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+th {
+  line-height: 1.5;
+  font-family: IBM Plex Sans, BlinkMacSystemFont, -apple-system, Segoe UI,
+    Roboto, Helvetica, Arial, sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+summary {
+  line-height: 1.5;
+  font-family: IBM Plex Sans, BlinkMacSystemFont, -apple-system, Segoe UI,
+    Roboto, Helvetica, Arial, sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+h1 {
+  font-size: 1.9em;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+th {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 2.9em;
+  text-align: center;
+}
+
+small,
+sub,
+sup {
+  font-size: 75%;
+}
+
+hr {
+  border-color: #6c86ff;
+}
+
+a {
+  text-decoration: none;
+  color: #6c86ff;
+}
+a:hover {
+  color: #5271ff;
+  border-bottom: 2px solid #303952;
+}
+
+ul {
+  padding-left: 1.4em;
+}
+
+li {
+  margin-bottom: 0.4em;
+}
+
+blockquote {
+  font-style: italic;
+  margin-left: 1.5em;
+  padding-left: 1em;
+  border-left: 3px solid #6c86ff;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Pre and Code */
+pre {
+  background-color: #f1f1f1;
+  display: block;
+  padding: 1em;
+  overflow-x: auto;
+}
+
+code {
+  font-size: 0.9em;
+  padding: 0 0.5em;
+  background-color: #f1f1f1;
+  white-space: pre-wrap;
+}
+
+pre > code {
+  padding: 0;
+  background-color: transparent;
+  white-space: pre;
+}
+
+/* Tables */
+table {
+  text-align: left;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+td,
+th {
+  padding: 0.5em;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+/* Buttons, forms and input */
+input,
+textarea {
+  border: 1px solid #303952;
+}
+input:focus,
+textarea:focus {
+  border: 1px solid #6c86ff;
+}
+
+textarea {
+  width: 100%;
+}
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: center;
+
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #6c86ff;
+  color: white;
+  border-radius: 1px;
+  border: 1px solid #6c86ff;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.button[disabled],
+button[disabled],
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+input[type="button"][disabled] {
+  cursor: default;
+  opacity: 0.5;
+}
+.button:focus,
+.button:hover,
+button:focus,
+button:hover,
+input[type="submit"]:focus,
+input[type="submit"]:hover,
+input[type="reset"]:focus,
+input[type="reset"]:hover,
+input[type="button"]:focus,
+input[type="button"]:hover {
+  background-color: #5271ff;
+  border-color: #5271ff;
+  color: white;
+  outline: 0;
+}
+
+textarea,
+select,
+input[type] {
+  color: #303952;
+  padding: 16px 10px;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
+  margin-bottom: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+textarea:focus,
+select:focus,
+input[type]:focus {
+  border: 1px solid #6c86ff;
+  outline: 0;
+}
+
+input[type="checkbox"]:focus {
+  outline: 1px dotted #6c86ff;
+}
+
+label,
+legend,
+fieldset {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+section {
+  padding-bottom: 24px;
+  border-bottom: 4px solid #f2f5fa;
+  border-bottom-style: dashed;
+}
+
+.inline-distortion {
+  background: #f3f5fb;
+  padding: 0.2em 0.7em;
+  white-space: nowrap;
+  border-radius: 4px;
+  color: #303952;
+  cursor: pointer;
+  font-family: monospace;
+}
+.inline-distortion:hover {
+  color: #6c86ff;
+  border: none;
+}
+
+/*
+We added this to create a drop down FAQ for our site .
+*/
+
+summary {
+  font-size: 1.05em;
+  font-weight: 600;
+  background-color: #f1f1f1;
+  color: #303952;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border-radius: 0.25rem;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+details > summary::after {
+  position: absolute;
+  content: "+";
+  right: 20px;
+}
+details[open] > summary::after {
+  position: absolute;
+  content: "-";
+  right: 20px;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary ~ * {
+  animation: sweep 0.5s ease-in-out;
+}
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-top: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 4px;
+  background: rgb(248, 248, 248);
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 4px;
+  background: #5271ff;
+  width: 0%;
+}
